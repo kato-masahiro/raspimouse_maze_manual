@@ -34,7 +34,7 @@ class GoAround():
         self.decision.publish(dc)
 
     def run(self):
-        rate = rospy.Rate(20)
+        rate = rospy.Rate(10)
         data = Twist()
 
         while not rospy.is_shutdown():
